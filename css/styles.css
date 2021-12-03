@@ -222,7 +222,9 @@ body {
   background-color: var(--acent-color);
 
   min-width: 200px;
-  padding: 10px 32px;
+  min-height: 50px;
+
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
@@ -439,6 +441,11 @@ body {
   padding-bottom: 60px;
 }
 
+.addr-container{
+    width: 231px;
+ 
+}
+
 .footer-logo {
   color: var(--white-color);
 }
@@ -454,6 +461,7 @@ body {
 .addr-list:last-child {
   margin-bottom: 0;
 }
+
 
 .footer-addr {
   font-style: normal;
@@ -475,6 +483,7 @@ body {
 .foot-cont {
   display: flex;
   align-items: baseline;
+
 }
 
 /* присоиденяйтесь */
@@ -489,7 +498,7 @@ body {
   display: flex;
 }
 
-.join-title {
+.join-title, .subscribe-title {
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -501,6 +510,61 @@ body {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
 }
+
+/* Подпишитесь */
+.subscribe-cont{
+  width: 570px;
+  margin-left: 93px;
+
+ 
+}
+
+.form-foot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-mail{
+  width: 358px;
+  height: 50px;
+
+  background-color: var(--secondary-color-fon);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 15px;
+
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-mail:focus{
+  outline: none;
+}
+
+.foot-btn{
+  position: relative;
+  padding-left: 29px;
+  text-align: left;
+
+}
+
+.foot-svg{
+  position: absolute;
+  top:13px;
+  right:28px;
+}
+
+
+
+
+
+
 
 /* Portfolio */
 

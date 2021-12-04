@@ -48,6 +48,11 @@ img {
   padding: 0;
 }
 
+/* Прячит чекбокс */
+.visualy-hidden {
+  appearance: none;
+}
+
 /* тело */
 
 body {
@@ -223,7 +228,6 @@ body {
 
   min-width: 200px;
   min-height: 50px;
-
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -441,9 +445,8 @@ body {
   padding-bottom: 60px;
 }
 
-.addr-container{
-    width: 231px;
- 
+.addr-container {
+  width: 231px;
 }
 
 .footer-logo {
@@ -461,7 +464,6 @@ body {
 .addr-list:last-child {
   margin-bottom: 0;
 }
-
 
 .footer-addr {
   font-style: normal;
@@ -483,7 +485,6 @@ body {
 .foot-cont {
   display: flex;
   align-items: baseline;
-
 }
 
 /* присоиденяйтесь */
@@ -498,7 +499,8 @@ body {
   display: flex;
 }
 
-.join-title, .subscribe-title {
+.join-title,
+.subscribe-title {
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -512,59 +514,50 @@ body {
 }
 
 /* Подпишитесь */
-.subscribe-cont{
+.subscribe-cont {
   width: 570px;
   margin-left: 93px;
-
- 
 }
 
-.form-foot{
+.form-foot {
   display: flex;
   justify-content: space-between;
 }
 
-.foot-mail{
+.foot-mail {
   width: 358px;
   height: 50px;
 
   background-color: var(--secondary-color-fon);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-padding-left: 15px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 15px;
 
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.foot-mail:focus{
+.foot-mail:focus {
   outline: none;
 }
 
-.foot-btn{
+.foot-btn {
   position: relative;
   padding-left: 29px;
   text-align: left;
-
 }
 
-.foot-svg{
+.foot-svg {
   position: absolute;
-  top:13px;
-  right:28px;
+  top: 13px;
+  right: 28px;
 }
-
-
-
-
-
-
 
 /* Portfolio */
 
@@ -584,7 +577,8 @@ color: rgba(255, 255, 255, 0.6);
   margin-left: 0px;
 }
 
-.filter-btn {
+.filter-btn,
+.send-btn {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -602,7 +596,8 @@ color: rgba(255, 255, 255, 0.6);
   transition: background-color 250ms var(--cubic-bazier), color 250ms var(--cubic-bazier);
 }
 
-.filter-btn.active {
+.filter-btn.active,
+.send-btn.active {
   color: var(--white-color);
   background-color: var(--acent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -740,6 +735,7 @@ color: rgba(255, 255, 255, 0.6);
   position: relative;
   width: 528px;
   min-height: 581px;
+  padding: 40px;
 
   position: absolute;
   top: 50%;
@@ -766,4 +762,114 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Форма в модалке */
+
+.form-cntainer {
+  width: 448px;
+}
+
+.text-details {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  display: block;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  display: block;
+  color: var(--secondary-color);
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.form-text {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form-text::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.label-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: var(--white-color);
+}
+
+.form-check:checked + .check-item {
+  background-color: var(--acent-color);
+  border: none;
+}
+
+.policy-contract {
+  font-size: 14px;
+  line-height: 1.71px;
+  margin-left: 5px;
+  letter-spacing: 0.03em;
+
+  color: var(--acent-color);
+}
+
+.send-btn.active {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
 }

@@ -514,6 +514,7 @@ body {
 }
 
 /* Подпишитесь */
+
 .subscribe-cont {
   width: 570px;
   margin-left: 93px;
@@ -541,6 +542,7 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .foot-mail:focus {
@@ -801,6 +803,8 @@ body {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  cursor: pointer;
+  transition: border 250ms var(--cubic-bazier);
 }
 
 .form-input:focus {
@@ -817,6 +821,7 @@ body {
   position: absolute;
   top: 11px;
   left: 12px;
+  transition: fill 250ms var(--cubic-bazier);
 }
 
 .form-text {

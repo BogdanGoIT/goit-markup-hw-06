@@ -802,6 +802,14 @@ body {
   padding-left: 42px;
 }
 
+.form-input:focus {
+  border: 1px solid var(--acent-color);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--acent-color);
+}
+
 .form-icon {
   width: 18px;
   height: 18px;

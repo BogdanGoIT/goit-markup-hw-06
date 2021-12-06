@@ -777,6 +777,14 @@ body {
   text-align: center;
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field:nth-child(4) {
+  margin-bottom: 20px;
+}
+
 .form-label {
   font-size: 12px;
   line-height: 1.16;
@@ -789,8 +797,6 @@ body {
 .form-container {
   position: relative;
   width: 448px;
-  margin-top: 4px;
-  margin-bottom: 10px;
 }
 
 .form-input {
@@ -826,7 +832,6 @@ body {
   padding: 12px 16px;
   height: 120px;
   resize: none;
-  margin-bottom: 20px;
 }
 
 .form-text::placeholder {

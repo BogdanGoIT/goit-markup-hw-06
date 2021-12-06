@@ -464,6 +464,7 @@
         </div>
     </footer>
 
+    <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn" data-modal-close>
@@ -475,40 +476,51 @@
 
             </button>
             <div class="form-cntainer">
-                <b class="text-details">Оставьте свои данные, мы вам перезвоним</b>
+                <p class="text-details">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="#" class="form-modal" autocomplete="off">
-                    <label for="name" class="form-label">Имя</label>
                     <div class="form-field">
-                        <input type="text" class="form-input" id="name" name="user-name">
-                        <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-person">
+                        <label class="form-label">Имя
+                            <div class="form-container">
+                                <input type="text" class="form-input" name="user-name">
+                                <svg class="form-icon">
+                                    <use href="./images/sprite.svg#icon-person">
 
-                            </use>
-                        </svg>
+                                    </use>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">Телефон
+                            <div class="form-container">
+                                <input type="tel" class="form-input" name="tel">
+                                <svg class="form-icon">
+                                    <use href="./images/sprite.svg#icon-phone">
+
+                                    </use>
+                                </svg>
+                            </div>
+                        </label>
                     </div>
 
-                    <label for="tel" class="form-label">Телефон</label>
+                    
                     <div class="form-field">
-                        <input type="tel" class="form-input" id="tel" name="tel">
-                        <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-phone">
+                        <label class="form-label">Почта
+                            <div class="form-container">
+                                <input type="email" class="form-input" name="email">
+                                <svg class="form-icon">
+                                    <use href="./images/sprite.svg#icon-email">
 
-                            </use>
-                        </svg>
+                                    </use>
+                                </svg>
+                            </div>
+                        </label>
                     </div>
 
-                    <label for="mail" class="form-label">Почта</label>
                     <div class="form-field">
-                        <input type="email" class="form-input" id="mail" name="email">
-                        <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-email">
-
-                            </use>
-                        </svg>
+                        <label for="text" class="form-label">Комментарий</label>
+                        <textarea name="text" id="text" placeholder="Введите текст" class="form-input form-text"></textarea>
                     </div>
-
-                    <label for="text" class="form-label">Комментарий</label>
-                    <textarea name="text" id="text" placeholder="Введите текст" class="form-input form-text"></textarea>
 
                        
                     <label class="label-policy">
